@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <style>
+        .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 12px 20px;
+        letter-spacing: 4px;
+        position: sticky;
+        top: 0;
+    }
+    .navbar-left {
+        color: black;
+        font-size: 20px;
+    }
+    .navbar-right a {
+        color: black;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    .image-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        max-width: 800px;
+    }
+    .text-overlay {
+        position: absolute;
+        font-size: 28px;
+        bottom: 10px;
+        left: 5px;
+        color: black;
+        padding: 8px 15px;
+        border-radius: 6px;
+    }
+    .serving{
+        display: flex;
+        padding-left: 150px;
+        padding-right: 150px;
+        column-gap: 50px;
+        font-size: 20px;
+    }
+    .Menu{
+        display: flex;
+        padding-left: 150px;
+        padding-right: 150px;
+        column-gap: 50px;
+        font-size: 20px;
+    }
+    .information{
+        display: flex;
+        flex-direction: column;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    .Description{
+        color: cadetblue;
+    }
+    .d{
+        display: flex;
+        justify-content: center;
+        background-color: lightgrey;
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">Gourmetau Catering</div>
+        <div class="navbar-right">
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="https://www.w3schools.com/w3images/hamburger.jpg" alt="Catering Image" width="1500">
+        <div class="text-overlay">Le Catering</div>
+    </div><br><br><br><br>
+    <div class="serving">
+        <div class="image">
+            <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" alt="">
+        </div>
+        <div class="Catering">
+            <center>
+                <h1>About Catering</h1>
+                <p>Tradition since 1889</p>
+            </center>
+            <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p><br>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div><br><br><br><br>
+    <div id="Menu" class="Menu">
+        <div class="Card">
+            <center><h1>Our Menu</h1></center>
+            <h3>Bread Basket</h3>
+            <p>Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+            <h3>Honey Almond Granola with Fruits</h3>
+            <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+            <h3>Belgian Waffle</h3>
+            <p>Vanilla flavored batter with malted flour 7.50</p>
+            <h3>Scrambled eggs</h3>
+            <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+            <h3>Blueberry Pancakes</h3>
+            <p>With syrup, butter and lots of berries 8.50</p>
+        </div>
+        <div class="item">
+            <img src="https://www.w3schools.com/w3images/tablesetting.jpg" alt="">
+        </div>
+    </div><br><br><br><br>
+    <div id="contact" class="information">
+        <h1 class="Info">Contact</h1>
+        <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p><br>
+        <p class="Description">Catering Service, 42nd Living St, 43043 New York, NY</p>
+        <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+        <form action target="_blank" class="a">
+            <p><input class="b" type="text" placeholder="Name" name="Name" required></p><br><hr>
+            <p><input class="b" type="number" placeholder="How many people" name="People" required></p><br><hr>
+            <p><input class="b" type="datetime-local" placeholder="Date and time" name="date" value="2020-11-16T20:00" required></p><br><hr>
+            <p><input class="b" type="text" placeholder="Message \ Special requirements" name="Message" required></p><br><hr>
+            <p><button class="c" type="submit">SEND MESSAGE</button></p><br>
+        </form>
+    </div>
+    <footer class="d">
+        <p>Powered by <a href="https://www.w3schools.com/w3css" target="_blank">w3.css</a></p>
+    </footer>
+</body>
+</html>
